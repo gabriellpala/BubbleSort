@@ -12,17 +12,16 @@ void bsortcomentado(int v[], int n){
 				t = 1;//
 			}
 		}
-		if (t == 0){//
-			return 0;//
+		if (t == 0){
+			return 0;
 		}
 	}
 }
-//-----------------------------------
 int main(){
 	int *vet, n,i;
 	printf("Tamanho do vetor:");
 	scanf("%d",&n);
-	vet = malloc(sizeof(int)*n);// alocando o vetor dinamicamente
+	vet = malloc(sizeof(int)*n);
 	geraVet(vet,n);
 	printVetor(vet,n);
 	bsort(vet,n);
